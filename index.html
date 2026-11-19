@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TECH RESCUE · B01 · Preparació i seguretat</title><style>
+:root{--navy:#16253f;--teal:#008d91;--pink:#e9477c;--amber:#f49a33;--purple:#8053c9;--bg:#f1f6fb;--ink:#24314a}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:16px/1.5 system-ui,Segoe UI,Arial;color:var(--ink)}header{background:linear-gradient(110deg,#16253f,#22517a);color:white;padding:23px clamp(16px,3vw,45px)}header .brand{font-weight:900;letter-spacing:.13em;color:#6de2d6}h1{font-size:clamp(28px,4vw,46px);margin:3px 0}header p{margin:0;color:#dce8f4}.layout{display:grid;grid-template-columns:270px minmax(0,1fr);max-width:1250px;margin:auto;gap:18px;padding:19px}.sidebar{background:white;position:sticky;top:12px;align-self:start;max-height:94vh;overflow:auto;border-radius:18px;padding:16px;box-shadow:0 3px 17px #192c4211}.sidebar h2{font-size:17px;margin:3px 0 12px}.navbtn{display:flex;align-items:center;gap:9px;text-align:left;border:0;background:#f4f8fc;width:100%;padding:10px;border-radius:11px;cursor:pointer;margin:5px 0;color:var(--navy);font-weight:650}.navbtn.active{background:#ddf8f4;border:2px solid var(--teal);padding:8px}.navbtn:hover{background:#ecf9fc}.status{color:var(--teal);font-weight:900;margin-left:auto}.progress{height:12px;background:#e0e8f0;border-radius:10px;overflow:hidden}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--teal),#43b9ac);transition:width .2s}.topstat{font-weight:650;margin:10px 0}.panel{min-width:0;background:white;border-radius:22px;padding:clamp(18px,3vw,35px);box-shadow:0 5px 20px #1b2c3f10}.eyebrow{letter-spacing:.1em;color:var(--teal);font-size:12px;font-weight:900}.panel h2{font-size:clamp(27px,3vw,38px);margin:2px 0 4px}.muted{color:#68758b}.chips{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 17px}.chip{padding:5px 12px;border-radius:30px;background:#e9f7f7;color:var(--teal);font-weight:800;font-size:13px}.chip.orange{background:#fff1dd;color:#976017}.poster{background:linear-gradient(120deg,#e8f5f6,#f5ebfc);padding:24px;border-radius:20px;margin:15px 0}.poster .huge{font-size:40px;margin-bottom:4px}.poster strong{font-size:22px}.poster p{margin:5px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:10px 0}.fact{border:1px solid #dde6ee;border-left:5px solid var(--teal);padding:13px;border-radius:10px;background:#fbfdff}h3{color:var(--navy);margin:25px 0 9px;font-size:19px}.steps{counter-reset:step;padding:0;list-style:none}.steps li{display:flex;gap:12px;background:#f5f9fc;border-radius:12px;padding:10px;margin:8px 0}.steps li::before{counter-increment:step;content:counter(step,decimal-leading-zero);background:var(--navy);color:white;border-radius:9px;padding:4px 9px;font-weight:900;height:34px}.question{padding:12px 0;border-bottom:1px solid #e6ecf1}.question label{display:inline-flex;gap:5px;align-items:center;margin:7px 15px 0 0}.question input{accent-color:var(--teal)}button.action{background:var(--teal);color:white;border:0;border-radius:11px;padding:11px 17px;font-size:15px;font-weight:800;cursor:pointer;margin:13px 8px 0 0}button.secondary{background:var(--navy)}button.action:hover{filter:brightness(.9)}.task{border-left:5px solid var(--pink);padding:10px 15px;background:#fff6f9;border-radius:10px}.expert{background:#f5eefb;border-left:5px solid var(--purple);border-radius:10px;padding:16px}.warn{background:#fff2e3;color:#81500f;border-left:5px solid var(--amber);padding:13px;border-radius:10px}.response{width:100%;min-height:66px;resize:vertical;border:1px solid #bacad6;border-radius:10px;padding:10px;font:inherit}.feedback{font-weight:800;padding:12px;margin:8px 0;border-radius:10px;display:none}.feedback.good{display:block;color:#087259;background:#ddfaec}.feedback.bad{display:block;color:#8b293c;background:#fde7ec}.submit{background:#edf8f3;padding:15px;border-radius:12px;margin-top:22px}.small{font-size:13px;color:#66738b}.exportPanel{background:#e9f6f6;border:1px solid #b3e6e3;border-radius:15px;padding:13px;margin:13px 0}.exportPanel h3{margin:0 0 8px;font-size:15px;color:var(--navy)}.exportPanel label{display:block;font-size:12px;font-weight:750;margin:9px 0 3px}.exportPanel input{display:block;background:white;border:1px solid #b7cdd7;border-radius:8px;font-size:14px;width:100%;padding:9px}.exportPanel .action{width:100%;font-size:13px;margin:9px 0 0}.exportPanel p{margin:7px 0}.exportNotice{font-size:12px;font-weight:750;overflow-wrap:anywhere}.hidden{display:none}.mobileNav{display:none}@media(max-width:760px){.layout{display:block;padding:10px}.sidebar{position:static;max-height:210px;margin-bottom:12px}.panel{padding:18px}.mobileNav{display:flex;gap:10px;margin:10px 0}.mobileNav button{flex:1}.navbtn{font-size:13px}}@media print{header,.sidebar,.mobileNav,button{display:none!important}.layout{display:block}.panel{box-shadow:none}.response{min-height:24px}}
+.blockintro{padding:15px 20px 16px;margin:0 0 24px;border-radius:16px;background:linear-gradient(110deg,#e6f8f5,#f2ecff);border:1px solid #e0e1fa}.blockintro strong{display:block;color:#16253f;font-size:20px;margin:5px 0}.blockintro p{margin:7px 0}.blocktag{display:inline-block;letter-spacing:.09em;font-weight:900;color:#06787a;font-size:12px}.blockintro .small{color:#425a6a}.exportPanel .action{line-height:1.35}.navbtn .status{min-width:16px}button.action:focus-visible,.navbtn:focus-visible{outline:3px solid #e9477c;outline-offset:3px}</style></head><body><header><div class="brand">TECH RESCUE · DIGITALITZACIÓ 4T ESO</div><h1>OPERACIÓ REBOOT</h1><p>B01 de 5 · 3 missions de 18 · UP2 · Laboratori autoguiat · Sense Internet</p></header><div class="layout"><aside class="sidebar"><h2>B01 · Missions del bloc</h2><div class="progress"><div class="bar" id="bar"></div></div><div class="topstat" id="progressText">0 / 3 missions completes</div><div class="exportPanel"><h3>📄 Entrega en PDF</h3><label for="studentName">Nom i cognoms *</label><input id="studentName" maxlength="90" autocomplete="name" placeholder="Escriu el teu nom i cognoms" oninput="storeIdentity()"><label for="studentGroup">Grup / classe</label><input id="studentGroup" maxlength="32" placeholder="Per exemple: 4t ESO A" oninput="storeIdentity()"><button class="action" onclick="exportPdf('all')">📄 Descarrega el PDF del bloc</button><button class="action secondary" onclick="exportPdf('current')">PDF d'una missió (esborrany)</button><p class="small"><strong>Per entregar el bloc:</strong> completa les tres respostes escrites i supera el checkpoint de totes les missions. El repte BOSS és opcional. El PDF final inclou totes les missions del bloc, la data i hora, el codi d'exportació i una empremta SHA-256. La marca no és una firma digital.</p><div id="pdfNotice" class="exportNotice" role="status" aria-live="polite"></div></div><div id="nav"></div><p class="small">El progrés es desa en aquest navegador. Si canvies d'ordinador, les respostes no es transferiran automàticament.</p></aside><main class="panel"><div class="blockintro"><span class="blocktag">B01 / 05 · MISSIONS M01—M03</span><strong>Primer, un taller segur</strong><p>Coneix les eines, detecta riscos i prepara un desmuntatge reversible abans de tocar cap peça.</p><p class="small">Quan acabis les 3 missions, descarrega <b>un únic PDF</b> per a l'activitat de Classroom. Totes les missions són obligatòries; el Repte BOSS és opcional.</p></div><div id="mission"></div><div class="mobileNav"><button class="action secondary" onclick="move(-1)">← Anterior</button><button class="action" onclick="move(1)">Següent →</button></div></main></div><script>
+const missions=[{"n":13,"title":"El maletí del tècnic","tag":"Selecciona eines amb criteri: més no sempre és millor.","gate":"AUTÒNOM","goal":"Identificar 12 eines, funcions i usos segurs.","facts":["Tornavís de la mida correcta: evita espatllar caps de cargol.","Safata i etiquetes: permeten reconstruir el procés.","La polsera ESD s’usa amb un punt adequat de connexió; no substitueix la desconnexió elèctrica."],"steps":["Obre la fitxa d’inventari i prepara quatre categories: muntatge, neteja, protecció i ordre.","Classifica les 12 eines de la llista; cada una ha de tenir una funció concreta.","Tria només sis objectes per a una visita tècnica a domicili.","Justifica dues eines que descartes i el motiu.","Completa la comprovació i guarda una foto o taula del maletí."],"task":"Un equip no arrenca després d’un trasllat. Tens 6 espais a la bossa. Quin maletí triaries?","prompts":["Classifica: tornavís Phillips, tornavís de precisió, brotxa antiestàtica, aire comprimit, safata, etiquetes, polsera ESD, llanterna, pinces ESD, brides, pasta tèrmica i drap de microfibra.","Escriu sis eines i per a cada una: què resol i quin risc evita.","Quines dues eines NO faries servir per revisar una connexió externa? Per què?"],"expert":"Dissenya dos maletins, un de baix cost i un de diagnòstic complet. Defineix 3 criteris per comparar-los, no només el preu.","evidence":"Inventari de 12 eines + selecció de 6 amb justificació.","quiz":[["La polsera ESD protegeix contra descàrregues estàtiques.",true],["Per obrir una font d’alimentació només cal apagar el PC.",false],["Etiquetar cargols pot evitar errors de remuntatge.",true]],"safety":"Sense manipular equips elèctrics.","vis":"tools"},{"n":14,"title":"Codi vermell: taller segur","tag":"La primera reparació és evitar un accident.","gate":"AUTÒNOM","goal":"Detectar riscos ESD, elèctrics i de neteja.","facts":["Abans d’obrir: apaga, desconnecta el cable d’alimentació i els perifèrics.","La font d’alimentació no s’obre; pot retenir càrrega.","Un líquid no s’aplica directament a l’interior d’un ordinador."],"steps":["Llegeix les 10 escenes de la missió, sense tocar cap equip.","Marca cada conducta com a segura o insegura.","Reescriu les insegures perquè siguin acceptables.","Elabora un decàleg amb verbs d’acció i una icona per norma.","Explica a un company què faries si detectes un risc no previst."],"task":"El robot d’inspecció ha detectat deu escenes. Evita que el taller cometi errors.","prompts":["Classifica: A) PC desendollat; B) font oberta; C) polsera ESD ben connectada; D) ventilador girant per l’aire; E) cargols etiquetats; F) líquid polvoritzat sobre la placa; G) connectors forçats; H) fotos abans de tocar; I) bateria inflada manipulada; J) peça sobre bossa antiestàtica adequada.","Transforma totes les escenes insegures en accions responsables.","Redacta 10 normes curtes que qualsevol alumne pugui aplicar."],"expert":"Crea una matriu risc = probabilitat × impacte (escala 1–3) per a quatre incidents. Dissenya una mesura preventiva per als dos riscos més alts.","evidence":"Decàleg il·lustrat + classificació de 10 conductes.","quiz":[["Una font d’alimentació es pot obrir si el PC està desconnectat.",false],["Els ventiladors s’han de mantenir immòbils en la neteja amb aire.",true],["Una bateria inflada s’ha de deixar de manipular i avisar.",true]],"safety":"Bateria sospitosa o danyada: STOP i avís immediat.","vis":"safety"},{"n":15,"title":"Pla d’infiltració: desmuntatge","tag":"La feina professional es pot desfer sense misteris.","gate":"AUTÒNOM","goal":"Preparar una seqüència reversible de 12 passes.","facts":["Fotografia el conjunt i els detalls abans de desconnectar.","Marca l’origen de cargols i cables.","El pla acaba amb una comprovació, no amb una pila de peces."],"steps":["Dibuixa un esquema amb zones de treball: equip, eines, cargols i fotos.","Ordena les 12 accions del protocol; marca les que requereixen autorització.","Assigna codis a 3 grups de cargols i 3 cables.","Fes una checklist de control i un espai per registrar incidències.","Revisa el pla amb la taula d’autocontrol abans de l’obertura real."],"task":"Un ordinador antic arriba sense manual. L’objectiu és obrir-lo sense perdre’n la història.","prompts":["Ordena: fer fotos, apagar, identificar peces, guardar cargols, comprovar alimentació desconnectada, posar etiquetes, retirar panell, preparar taula, apuntar incidències, identificar cables, revisar seguretat ESD, elaborar inventari.","Dissenya un codi d’etiquetes per a: panell, SSD i ventilador.","Quines 3 evidències permetran reconstruir el PC al final?"],"expert":"Compara dos itineraris: (A) retirar peces immediatament o (B) documentar, etiquetar i retirar. Calcula el cost d’un error i defensa una estratègia de traçabilitat.","evidence":"Checklist de 12 passos + sistema d’etiquetes.","quiz":[["Fotografiar abans de desconnectar redueix errors de muntatge.",true],["És preferible barrejar tots els cargols en una capsa.",false],["Un pla de desmuntatge ha de permetre tornar a muntar.",true]],"safety":"Planificació en paper; no cal obrir cap PC.","vis":"workflow"}];const icons={"tools": "🧰", "safety": "🛡", "workflow": "🗺", "pc": "💻", "storage": "💾", "cables": "🔌", "motherboard": "🧩", "cleaning": "🧹", "boot": "🟢", "uefi": "⚙", "dashboard": "📊", "os": "🖥", "vm": "📦", "install": "🚀", "final": "🎯"};const BLOCK_ID='B01',BLOCK_TITLE="Preparació i seguretat",BLOCK_COUNT=3;const KEY='techrescue-up2-v1';let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}let current=0;
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}}function el(id){return document.getElementById(id)}function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function state(n){return saved[n]||(saved[n]={notes:['','',''],boss:'',quiz:{},done:false})}function missionComplete(m){let x=state(m.n);return x.done&&m.prompts.every((_,i)=>String(x.notes[i]||'').trim().length>0)}
+function nav(){
+  const completed=missions.filter(m=>missionComplete(m)).length;
+  el('progressText').textContent=completed+' / '+missions.length+' missions completes';
+  el('bar').style.width=(completed/missions.length*100)+'%';
+  el('nav').innerHTML=missions.map((m,i)=>'<button class="navbtn '+(i===current?'active':'')+'" onclick="show('+i+')"><span>M'+String(m.n-12).padStart(2,'0')+'</span><span>'+esc(m.title)+'</span><span class="status">'+(missionComplete(m)?'✓':(state(m.n).done?'◐':''))+'</span></button>').join('');
+}
+function show(i){current=Math.min(missions.length-1,Math.max(0,i));let m=missions[current],s=state(m.n);el('mission').innerHTML=`<div class="eyebrow">MISSIÓ GLOBAL M${String(m.n-12).padStart(2,'0')} · ${current+1} DE ${missions.length} DEL BLOC · SESSIÓ ${m.n}</div><h2>${esc(m.title)}</h2><div class="muted">${esc(m.tag)}</div><div class="chips"><span class="chip ${m.gate==='SUPERVISIÓ'?'orange':''}">${m.gate}</span><span class="chip">50 minuts</span></div><div class="poster"><div class="huge">${icons[m.vis]}</div><strong>${esc(m.goal)}</strong><p>Observa → prova → documenta → verifica</p></div><h3>La idea en 30 segons</h3><div class="cards">${m.facts.map(x=>'<div class="fact">'+esc(x)+'</div>').join('')}</div><h3>Guia pas a pas</h3><ol class="steps">${m.steps.map(x=>'<li>'+esc(x)+'</li>').join('')}</ol><div class="warn"><strong>Semàfor:</strong> ${esc(m.safety)} ${m.gate==='SUPERVISIÓ'?'Si no hi ha permís, utilitza el diagrama del dossier i les dades simulades.':''}</div><h3>El teu encàrrec</h3><div class="task"><strong>${esc(m.task)}</strong></div><p class="small"><strong>✍️ Resposta personal:</strong> escriu directament les teves idees. Per afavorir el treball propi, els camps no permeten copiar, retallar, enganxar ni arrossegar text.</p>${m.prompts.map((p,j)=>'<div class="question"><strong>'+(j+1)+'. '+esc(p)+'</strong><textarea class="response" oninput="note('+j+',this.value)" placeholder="Escriu la teva resposta, criteri o pla..."></textarea></div>').join('')}<h3>Repte BOSS · nivell expert</h3><div class="expert">${esc(m.expert)}<textarea class="response" id="boss" oninput="bossNote(this.value)" placeholder="Solució avançada i justificació..."></textarea></div><h3>Checkpoint: V o F</h3>${m.quiz.map((q,j)=>'<div class="question"><strong>'+(j+1)+'. '+esc(q[0])+'</strong><div><label><input type="radio" name="q'+j+'" value="true" onclick="answer('+j+',true)"> Vertader</label><label><input type="radio" name="q'+j+'" value="false" onclick="answer('+j+',false)"> Fals</label></div></div>').join('')}<button class="action" onclick="check()">Comprova les 3 respostes</button><div class="feedback" id="feedback"></div><div class="submit"><strong>Entrega a Classroom:</strong> ${esc(m.evidence)}<p class="small">Aquesta comprovació no autoritza a manipular un PC. El docent valida les operacions físiques.</p><button class="action secondary" onclick="exportPdf('current')">📄 Descarrega missió en PDF</button><button class="action" onclick="move(1)">Missió següent →</button></div>`;
+ m.prompts.forEach((_,j)=>document.querySelectorAll('.response')[j].value=s.notes[j]||'');el('boss').value=s.boss||'';m.quiz.forEach((q,j)=>{let v=s.quiz[j];if(typeof v==='boolean'){let r=document.querySelector(`input[name="q${j}"][value="${v}"]`);if(r)r.checked=true}});nav();window.scrollTo({top:0,behavior:'instant'})}
+function note(i,v){state(missions[current].n).notes[i]=v;persist();nav()}function bossNote(v){state(missions[current].n).boss=v;persist()}function answer(i,v){state(missions[current].n).quiz[i]=v;persist()}function check(){let m=missions[current],s=state(m.n),right=m.quiz.filter((q,i)=>s.quiz[i]===q[1]).length,fully=Object.keys(s.quiz).length===3;s.done=right===3;persist();let x=el('feedback');x.className='feedback '+(right===3?'good':'bad');x.innerHTML=right===3?'✓ 3/3! Checkpoint superat. Revisa ara l’evidència de la missió.':'Has encertat '+right+'/3. '+(!fully?'Respon totes les preguntes. ':'')+'Revisa les idees essencials i torna-ho a provar.';nav()}
+function move(n){show(current+n)}
+// Exportació PDF 100 % local: no envia dades a cap servidor ni necessita llibreries externes.
+const PDF_APP_VERSION='TECHRESCUE-UP2-'+BLOCK_ID+'-PDF-2.0';
+const PDF_W=595.28, PDF_H=841.89;
+const PDF_PALETTE={navy:[0.086,0.145,0.247], teal:[0,0.553,0.569], white:[1,1,1], ink:[0.15,0.196,0.278], muted:[0.42,0.47,0.56], pale:[0.936,0.966,0.980], violet:[0.505,0.325,0.788], pink:[0.915,0.278,0.486]};
+function pdfWinAnsi(text){
+  const special={'€':128,'‚':130,'ƒ':131,'„':132,'…':133,'†':134,'‡':135,'ˆ':136,'‰':137,'Š':138,'‹':139,'Œ':140,'Ž':142,'‘':145,'’':146,'“':147,'”':148,'•':149,'–':150,'—':151,'˜':152,'™':153,'š':154,'›':155,'œ':156,'ž':158,'Ÿ':159};
+  let bytes=[];
+  for(const c of String(text)){
+    let x=c.codePointAt(0);
+    if(special[c]!==undefined)x=special[c];
+    else if(x>255 || (x>=127&&x<160))x=63;
+    bytes.push(x);
+  }
+  return bytes;
+}
+function pdfHex(s){return pdfWinAnsi(s).map(x=>x.toString(16).padStart(2,'0')).join('').toUpperCase()}
+function pdfRGB(a){return a.map(x=>x.toFixed(3)).join(' ')}
+function pdfText(cmd,txt,x,top,size=10,bold=false,color=PDF_PALETTE.ink){
+  if(!txt)return;
+  cmd.push(`BT /${bold?'F2':'F1'} ${size.toFixed(2)} Tf ${pdfRGB(color)} rg 1 0 0 1 ${x.toFixed(2)} ${(PDF_H-top).toFixed(2)} Tm <${pdfHex(txt)}> Tj ET`);
+}
+function pdfRect(cmd,x,top,w,h,color){cmd.push(`q ${pdfRGB(color)} rg ${x.toFixed(2)} ${(PDF_H-top-h).toFixed(2)} ${w.toFixed(2)} ${h.toFixed(2)} re f Q`)}
+function pdfLine(cmd,x1,y1,x2,y2,color=PDF_PALETTE.pale){cmd.push(`q ${pdfRGB(color)} RG .7 w ${x1.toFixed(2)} ${(PDF_H-y1).toFixed(2)} m ${x2.toFixed(2)} ${(PDF_H-y2).toFixed(2)} l S Q`)}
+function pdfTextWidth(t,size,bold){
+  let sum=0;
+  for(const c of String(t)){
+    if('ilI.,;:!|\'` '.includes(c))sum+=0.28;
+    else if('MW@%m'.includes(c))sum+=0.86;
+    else if(/[A-ZÀ-Ý0-9]/.test(c))sum+=0.64;
+    else sum+=0.53;
+  }
+  return sum*size*(bold?1.04:1.02);
+}
+function pdfWrap(txt, width, size, bold=false){
+  const result=[];
+  for(const original of String(txt||'').replace(/\r/g,'').split('\n')){
+    let line='';
+    const words=original.split(/\s+/).filter(Boolean);
+    for(let word of words){
+      if(line && pdfTextWidth(line+' '+word,size,bold)<=width){line+=' '+word;continue}
+      if(!line && pdfTextWidth(word,size,bold)<=width){line=word;continue}
+      if(line){result.push(line);line=''}
+      while(pdfTextWidth(word,size,bold)>width){
+        let part='';
+        for(const ch of word){if(part && pdfTextWidth(part+ch,size,bold)>width)break;part+=ch}
+        result.push(part);word=word.slice(part.length);
+      }
+      line=word;
+    }
+    result.push(line);
+  }
+  return result;
+}
+class PDFMissionReport{
+  constructor(stamp){this.pages=[];this.stamp=stamp;this.pageIndex=0;this.y=0;this.newPage()}
+  newPage(){
+    const cmd=[];this.pages.push(cmd);this.pageIndex=this.pages.length;
+    pdfRect(cmd,0,0,PDF_W,75,PDF_PALETTE.navy);
+    pdfRect(cmd,0,0,12,75,PDF_PALETTE.teal);
+    pdfText(cmd,'TECH RESCUE / DIGITALITZACIÓ 4T ESO',44,30,10.5,true,PDF_PALETTE.white);
+    pdfText(cmd,'UP2  ·  OPERACIÓ REBOOT',44,51,16.5,true,PDF_PALETTE.white);
+    pdfText(cmd,'PDF GENERAT A L’APLICACIÓ',421,38,7.5,true,[0.55,0.89,0.85]);
+    pdfText(cmd,this.stamp.code.substring(0,24),422,53,7.4,false,PDF_PALETTE.white);
+    this.y=97;
+  }
+  space(h){if(this.y+h>782)this.newPage()}
+  heading(text){this.space(51);this.y+=5;const lines=pdfWrap(text,498,15.2,true);for(const line of lines){pdfText(this.last(),line,43,this.y+14,15.2,true,PDF_PALETTE.navy);this.y+=22}this.y+=9}
+  last(){return this.pages[this.pages.length-1]}
+  label(text, color=PDF_PALETTE.teal){this.space(25);pdfRect(this.last(),43,this.y-6,4,17,color);pdfText(this.last(),text.toUpperCase(),54,this.y+7,9.5,true,color);this.y+=24}
+  paragraph(text,opts={}){
+    const {fontSize=10,leading=15,bold=false,indent=0,color=PDF_PALETTE.ink,after=7}=opts;
+    const lines=pdfWrap(text,509-indent,fontSize,bold);
+    for(const ln of lines){this.space(leading+1);if(ln)pdfText(this.last(),ln,43+indent,this.y+fontSize,fontSize,bold,color);this.y+=leading}
+    this.y+=after;
+  }
+  meta(){
+    const s=this.stamp;
+    this.space(156);
+    pdfRect(this.last(),39,this.y-9,519,154,PDF_PALETTE.pale);
+    pdfRect(this.last(),39,this.y-9,519,5,PDF_PALETTE.teal);
+    const left=52;
+    pdfText(this.last(),'INFORME D’ACTIVITAT · ENTREGA A CLASSROOM',left,this.y+13,10.3,true,PDF_PALETTE.navy);
+    pdfText(this.last(),'Alumne/a:',left,this.y+34,9,true,PDF_PALETTE.muted);
+    pdfText(this.last(),s.name.substring(0,69),121,this.y+34,9.2,true,PDF_PALETTE.ink);
+    pdfText(this.last(),'Grup:',left,this.y+52,9,true,PDF_PALETTE.muted);
+    pdfText(this.last(),s.group||'Sense indicar',121,this.y+52,9.2,false,PDF_PALETTE.ink);
+    pdfText(this.last(),'Emès el:',left,this.y+70,9,true,PDF_PALETTE.muted);
+    pdfText(this.last(),s.dateDisplay,121,this.y+70,9.2,false,PDF_PALETTE.ink);
+    pdfText(this.last(),'Codi:',left,this.y+88,9,true,PDF_PALETTE.muted);
+    pdfText(this.last(),s.code,121,this.y+88,9.2,true,PDF_PALETTE.teal);
+    pdfText(this.last(),'Empremta SHA-256:',left,this.y+107,9,true,PDF_PALETTE.muted);
+    pdfText(this.last(),s.hash.substring(0,32),160,this.y+107,9.0,false,PDF_PALETTE.ink);
+    pdfText(this.last(),s.hash.substring(32),160,this.y+121,9.0,false,PDF_PALETTE.ink);
+    this.y+=162;
+    this.paragraph(`Àmbit de l’informe: ${s.scope} · ${s.count} missions incloses.`,{fontSize:9.3,bold:true,after:5});
+  }
+  mission(m,s,order){
+    this.newPage();
+    this.label(`Missió ${String(m.n-12).padStart(2,'0')} / Sessió ${m.n}`,PDF_PALETTE.violet);
+    this.heading(m.title);
+    this.paragraph(`OBJECTIU  ${m.goal}`,{fontSize:9.4,bold:false,color:PDF_PALETTE.muted,after:12});
+    m.prompts.forEach((prompt,i)=>{
+      this.label(`Q${i+1} · Pregunta`,PDF_PALETTE.teal);
+      this.paragraph(prompt,{fontSize:9.5,bold:true,after:6});
+      const answer=String(s.notes[i]||'').trim();
+      if(answer){this.paragraph(answer,{fontSize:10,leading:15.5,indent:8,after:13})}
+      else this.paragraph('[Sense resposta]',{fontSize:9,indent:8,color:PDF_PALETTE.muted,after:10});
+    });
+    if(String(s.boss||'').trim()){
+      this.label('Repte BOSS · aprofundiment',PDF_PALETTE.violet);
+      this.paragraph(m.expert,{fontSize:9.5,bold:true,after:7});
+      this.paragraph(s.boss,{fontSize:10,leading:15.5,indent:8,after:13});
+    }
+    this.label('Checkpoint',PDF_PALETTE.teal);
+    m.quiz.forEach((q,i)=>{
+      const value=s.quiz[i];const answer=value===true?'V':value===false?'F':'-';
+      this.paragraph(`${i+1}. ${q[0]}   [${answer}]`,{fontSize:9.1,after:3});
+    });
+    this.paragraph(`Estat del checkpoint: ${s.done?'SUPERAT (3/3)':'PENDENT O NO SUPERAT'}.`,{fontSize:9.4,bold:true,color:s.done?PDF_PALETTE.teal:PDF_PALETTE.muted,after:7});
+    this.paragraph(`Evidència esperada: ${m.evidence}`,{fontSize:9.1,color:PDF_PALETTE.muted,after:18});
+  }
+  build(){
+    const total=this.pages.length;
+    for(let i=0;i<total;i++){
+      const cmd=this.pages[i];pdfLine(cmd,43,802,553,802,[.8,.84,.88]);
+      pdfText(cmd,`Origen declarat: ${PDF_APP_VERSION}  ·  ${this.stamp.code}`,43,818,7.1,false,PDF_PALETTE.muted);
+      pdfText(cmd,`Pàg. ${i+1} / ${total}`,504,818,8,true,PDF_PALETTE.navy);
+    }
+    const objs=[null];
+    const put=s=>(objs.push(s),objs.length-1);
+    const f1=put('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>');
+    const f2=put('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>');
+    const pagesId=put('');
+    const pageIds=[];
+    this.pages.forEach(cmd=>{
+      const contents=cmd.join('\n')+'\n';
+      const contentId=put(`<< /Length ${contents.length} >>\nstream\n${contents}endstream`);
+      pageIds.push(put(`<< /Type /Page /Parent ${pagesId} 0 R /MediaBox [0 0 ${PDF_W} ${PDF_H}] /Resources << /Font << /F1 ${f1} 0 R /F2 ${f2} 0 R >> >> /Contents ${contentId} 0 R >>`));
+    });
+    objs[pagesId]=`<< /Type /Pages /Count ${pageIds.length} /Kids [ ${pageIds.map(i=>`${i} 0 R`).join(' ')} ] >>`;
+    const catalogId=put(`<< /Type /Catalog /Pages ${pagesId} 0 R >>`);
+    const infoId=put(`<< /Title <${pdfHex('TECH RESCUE UP2 - Informe de treball')}> /Producer (TECH RESCUE UP2 - Exportacio PDF local) /CreationDate (D:${this.stamp.utc}) >>`);
+    let body='%PDF-1.4\n';
+    const offsets=[0];
+    for(let i=1;i<objs.length;i++){
+      offsets[i]=body.length;body+=`${i} 0 obj\n${objs[i]}\nendobj\n`;
+    }
+    const xref=body.length;
+    body+=`xref\n0 ${objs.length}\n0000000000 65535 f \n`;
+    for(let i=1;i<objs.length;i++)body+=`${String(offsets[i]).padStart(10,'0')} 00000 n \n`;
+    body+=`trailer\n<< /Size ${objs.length} /Root ${catalogId} 0 R /Info ${infoId} 0 R >>\nstartxref\n${xref}\n%%EOF`;
+    return new Uint8Array([...body].map(ch=>ch.charCodeAt(0)));
+  }
+}
+// SHA-256 amb Web Crypto i implementació local de reserva en ordinadors sense Web Crypto.
+function sha256Local(data){
+  const K=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+  const H=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];
+  const original=new TextEncoder().encode(data),size=Math.ceil((original.length+9)/64)*64,p=new Uint8Array(size);p.set(original);p[original.length]=128;
+  const bits=BigInt(original.length)*8n;for(let i=0;i<8;i++)p[size-1-i]=Number((bits>>BigInt(i*8))&255n);
+  const rr=(n,x)=>(x>>>n)|(x<<(32-n));
+  for(let b=0;b<size;b+=64){
+    const w=new Uint32Array(64);
+    for(let i=0;i<16;i++)w[i]=((p[b+4*i]<<24)|(p[b+4*i+1]<<16)|(p[b+4*i+2]<<8)|p[b+4*i+3])>>>0;
+    for(let i=16;i<64;i++){
+      const x=w[i-15],z=w[i-2],s0=rr(7,x)^rr(18,x)^(x>>>3),s1=rr(17,z)^rr(19,z)^(z>>>10);
+      w[i]=(w[i-16]+s0+w[i-7]+s1)>>>0;
+    }
+    let [a,c,d,e,f,g,h,j]=H;
+    for(let i=0;i<64;i++){
+      const S1=rr(6,f)^rr(11,f)^rr(25,f),ch=(f&g)^(~f&h);
+      const t1=(j+S1+ch+K[i]+w[i])>>>0;
+      const S0=rr(2,a)^rr(13,a)^rr(22,a),maj=(a&c)^(a&d)^(c&d);
+      const t2=(S0+maj)>>>0;
+      j=h;h=g;g=f;f=(e+t1)>>>0;e=d;d=c;c=a;a=(t1+t2)>>>0;
+    }
+    const states=[a,c,d,e,f,g,h,j];for(let i=0;i<8;i++)H[i]=(H[i]+states[i])>>>0;
+  }
+  return H.map(x=>x.toString(16).padStart(8,'0')).join('');
+}
+async function sha256Hex(s){
+  if(window.crypto&&window.crypto.subtle){
+    try{return [...new Uint8Array(await window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))].map(x=>x.toString(16).padStart(2,'0')).join('')}catch(e){}
+  }
+  return sha256Local(s);
+}
+function reportHasWork(s){return s.notes.some(x=>String(x||'').trim())||Boolean(String(s.boss||'').trim())}
+function exportId(){
+  const a=new Uint8Array(8);if(window.crypto?.getRandomValues)window.crypto.getRandomValues(a);else for(let i=0;i<8;i++)a[i]=Math.floor(Math.random()*256);
+  return 'TR2-'+BLOCK_ID+'-'+Date.now().toString(36).toUpperCase()+'-'+[...a].map(x=>x.toString(16).padStart(2,'0')).join('').toUpperCase();
+}
+function setExportMessage(t,ok=true){
+  const box=el('pdfNotice');if(!box)return;box.textContent=t;box.style.color=ok?'#087259':'#a22239';
+}
+function studentDetails(){
+  const name=el('studentName')?.value.trim().replace(/\s+/g,' ')||'';
+  const group=el('studentGroup')?.value.trim().replace(/\s+/g,' ')||'';
+  return {name,group};
+}
+function storeIdentity(){
+  const {name,group}=studentDetails();try{localStorage.setItem('techrescue-up2-identity',JSON.stringify({name,group}))}catch(e){}
+}
+function restoreIdentity(){
+  try{const s=JSON.parse(localStorage.getItem('techrescue-up2-identity')||'{}');el('studentName').value=s.name||'';el('studentGroup').value=s.group||''}catch(e){}
+}
+async function exportPdf(scope){
+  const {name,group}=studentDetails();
+  if(name.length<3){setExportMessage('Escriu el teu nom i cognoms abans de generar el PDF.',false);el('studentName').focus();return}
+  if(scope==='all'){
+    const pending=missions.filter(m=>!missionComplete(m));
+    if(pending.length){
+      const names=pending.map(m=>'M'+String(m.n-12).padStart(2,'0')).join(', ');
+      setExportMessage('Per entregar aquest bloc has de completar les tres respostes i superar el checkpoint de CADA missió. Pendents: '+names+'. El repte BOSS és opcional.',false);
+      return;
+    }
+  }
+  const selected=scope==='current'?[missions[current]]:missions;
+  if(selected.every(m=>!reportHasWork(state(m.n)))){
+    setExportMessage('Primer completa alguna resposta escrita.',false);return;
+  }
+  const dt=new Date(),iso=dt.toISOString(),stamp={
+    name,group,
+    scope:scope==='current'?(missionComplete(missions[current])?'Missió M'+String(missions[current].n-12).padStart(2,'0')+' · '+BLOCK_TITLE:'ESBORRANY · Missió M'+String(missions[current].n-12).padStart(2,'0')+' · '+BLOCK_TITLE):BLOCK_ID+' · '+BLOCK_TITLE+' · M'+String(missions[0].n-12).padStart(2,'0')+'–M'+String(missions[missions.length-1].n-12).padStart(2,'0'),
+    count:selected.length,code:exportId(),
+    dateDisplay:new Intl.DateTimeFormat('ca-ES',{dateStyle:'short',timeStyle:'medium',timeZone:'Europe/Madrid'}).format(dt)+' (hora del dispositiu)',
+    utc:iso.replace(/[-:T]/g,'').replace(/\.\d+Z$/,'Z'),hash:''
+  };
+  const evidence=selected.map(m=>({session:m.n,questions:m.prompts,notes:state(m.n).notes,boss:state(m.n).boss,quiz:state(m.n).quiz,done:state(m.n).done}));
+  stamp.hash=await sha256Hex(JSON.stringify({app:PDF_APP_VERSION,block:BLOCK_ID,iso,code:stamp.code,name,group,evidence}));
+  const pdf=new PDFMissionReport(stamp);pdf.meta();selected.forEach((m,i)=>pdf.mission(m,state(m.n),i));
+  const bytes=pdf.build();
+  const slug=name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,52)||'alumne';
+  const missionTag='M'+String(missions[0].n-12).padStart(2,'0')+'-M'+String(missions[missions.length-1].n-12).padStart(2,'0');
+  const nameFile='TECH-RESCUE-UP2_'+slug+'_'+BLOCK_ID+'_'+(scope==='current'?'ESBORRANY-M'+String(missions[current].n-12).padStart(2,'0'):missionTag)+'_'+iso.slice(0,10)+'.pdf';
+  const url=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
+  const link=document.createElement('a');link.href=url;link.download=nameFile;document.body.appendChild(link);link.click();link.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),20000);
+  setExportMessage('PDF generat: '+nameFile+'. Puja aquest fitxer a la tasca del bloc a Classroom.');
+  storeIdentity();
+}
+// Protecció dels camps de resposta: no interfereix amb la descàrrega del PDF.
+function campProtegit(event){
+  const target=event.target;
+  if(!(target instanceof Element))return false;
+  const field=target.closest('textarea,input,[contenteditable="true"]');
+  if(!field||field.dataset.allowExportCopy==='true')return false;
+  if(field.matches('input[type="radio"],input[type="checkbox"],input[type="button"],input[type="submit"]'))return false;
+  return true;
+}
+for(const eventName of ['copy','cut','paste','drop','dragstart','contextmenu']){
+  document.addEventListener(eventName,event=>{
+    if(campProtegit(event))event.preventDefault();
+  },true);
+}
+document.addEventListener('dragover',event=>{
+  if(campProtegit(event))event.preventDefault();
+},true);
+document.addEventListener('beforeinput',event=>{
+  if(!campProtegit(event))return;
+  const type=event.inputType||'';
+  if(type.startsWith('insertFromPaste')||type==='insertFromDrop'||type==='insertFromYank')event.preventDefault();
+},true);
+document.addEventListener('keydown',event=>{
+  if(!campProtegit(event))return;
+  const key=event.key.toLowerCase();
+  const blockedShortcut=(event.ctrlKey||event.metaKey)&&['c','v','x'].includes(key);
+  const blockedLegacy=(event.shiftKey&&key==='insert')||(event.ctrlKey&&key==='insert')||(event.shiftKey&&key==='delete');
+  if(blockedShortcut||blockedLegacy)event.preventDefault();
+},true);
+restoreIdentity();show(0);
+</script></body></html>
