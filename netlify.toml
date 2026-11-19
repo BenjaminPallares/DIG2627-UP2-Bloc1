@@ -1,7 +1,3 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/"
-  to = "/UP2_B01_Preparacio_i_Seguretat_M01-M03.html"
-  status = 200
